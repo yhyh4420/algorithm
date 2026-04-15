@@ -23,9 +23,7 @@ class Result {
 
     public static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
         int size = a.size();
-        List<Integer> answer = new ArrayList<>();
-        answer.add(0);
-        answer.add(0);
+        List<Integer> answer = new ArrayList<>(Arrays.asList(0,0));
         for (int i=0; i<size; i++){
             if (a.get(i) > b.get(i)) {
                 answer.set(0, answer.get(0)+1);
